@@ -9,6 +9,11 @@ const config = require("config");
 const User = require("../../models/User");
 
 // @route   POST api/users
+// @desc    Log in user
+// @access  Public
+router.post("/", (req, res) => {});
+
+// @route   POST api/users
 // @desc    Register & log in a new user
 // @access  Public
 router.post(
