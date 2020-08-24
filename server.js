@@ -9,7 +9,7 @@ connectDB();
 // Init Middleware
 app.use(express.json({ extended: false }));
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 // Define Routes
 app.use("/api/users", require("./routes/api/users"));
@@ -18,9 +18,9 @@ app.use("/api/profile", require("./routes/api/profile"));
 app.use("/api/posts", require("./routes/api/posts"));
 
 app.get("/", (req, res) => {
-	res.send("API running!");
+  res.send("API running!");
 });
 
 app.listen(PORT, () => {
-	console.log(`Server is up and running on port ${PORT}...`);
+  console.log(`Server is up and running on port ${PORT}...`);
 });
