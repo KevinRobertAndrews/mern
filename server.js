@@ -16,11 +16,12 @@ app.use("/api/users", require("./routes/api/users"));
 app.use("/api/auth", require("./routes/api/auth"));
 app.use("/api/profile", require("./routes/api/profile"));
 app.use("/api/posts", require("./routes/api/posts"));
+app.use("/api/ideas", require("./routes/api/ideas"));
 
 app.get("/", (req, res) => {
-	res.send("API running!");
+  res.send("API running!");
 });
 
-app.listen(PORT, () => {
-	console.log(`Server is up and running on port ${PORT}...`);
+app.listen(5000, () => {
+  console.log(`Server is up and running on port ${5000}...`);
 });
