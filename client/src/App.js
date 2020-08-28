@@ -10,7 +10,7 @@ import Register from "../src/components/auth/Register";
 import Alert from "../src/components/Layout/Alert";
 import Dashboard from "../src/components/dashboard/Dashboard";
 import PrivateRoute from "../src/components/routing/PrivateRoute";
-import CreateProfile from "../src/components/profile-form/Profile";
+import CreateProfile from "../src/components/profile-forms/CreateProfile";
 
 // Redux
 import { Provider } from "react-redux";
