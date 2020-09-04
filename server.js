@@ -19,9 +19,9 @@ app.use("/api/posts", require("./routes/api/posts"));
 app.use("/api/ideas", require("./routes/api/ideas"));
 
 app.get("/", (req, res) => {
-	res.send("API running!");
+  res.send("API running!");
 });
 
 app.listen(PORT, () => {
-	console.log(`Server is up and running on port ${PORT}...`);
+  console.log(`Server is up and running on port ${PORT}...`);
 });
